@@ -1,0 +1,1021 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #0b0f19; /* Dark Space Theme */
+    color: #e2e8f0;
+}
+
+/* 1. Top White Banner */
+.top-banner {
+    background-color: #ffffff;
+    color: #0b0f19;
+    text-align: center;
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* 2. Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 5%;
+    background-color: #111827;
+    border-bottom: 1px solid #1f293d;
+    gap: 1.5rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+/* 3. Logo Styles */
+.logo a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 1.1;
+}
+
+.logo .first-name {
+    color: #ff6b35; /* Orange Accent */
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo .last-name {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 4. Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+}
+
+/* 5. Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a2332;
+    min-width: 200px;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    display: none;
+    list-style: none;
+    padding: 0.5rem 0;
+    border: 1px solid #2d3748;
+    z-index: 100;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 0.75rem 1.2rem;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #242f42;
+    color: #ff6b35;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* 6. Search Box Styles */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #1a2332;
+    border: 1px solid #2d3748;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-box:focus-within {
+    border-color: #ff6b35;
+    box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.2);
+}
+
+.search-select {
+    background-color: #111827;
+    color: #cbd5e1;
+    border: none;
+    border-right: 1px solid #2d3748;
+    padding: 0.55rem 0.8rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-select option {
+    background-color: #111827;
+    color: #e2e8f0;
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    padding: 0.55rem 0.9rem;
+    color: #ffffff;
+    font-size: 0.85rem;
+    outline: none;
+    width: 200px;
+}
+
+.search-input::placeholder {
+    color: #64748b;
+}
+
+.search-button {
+    background-color: #ff6b35;
+    border: none;
+    color: #ffffff;
+    padding: 0.55rem 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #e05523;
+}
+
+/* Home Page Banner (Optional) */
+.hero-banner {
+    width: 100%;
+    aspect-ratio: 1920 / 400;
+    max-height: 260px;
+    overflow: hidden;
+    border-bottom: 1px solid #1f293d;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* =========================================================
+   7. PORTFOLIO PAGE STYLES (Magazine Layout)
+   ========================================================= */
+
+.portfolio-wrapper {
+    max-width: 1240px;
+    margin: 2rem auto 4rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Category Block & Headers */
+.category-block {
+    margin-bottom: 4rem;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.category-header h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.category-line {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #ff6b35 0%, #1f293d 100%);
+    border-radius: 2px;
+}
+
+/* Featured Top Row Layout */
+.featured-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Left Featured Large Card */
+.featured-card {
+    background-color: #111827;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #1f293d;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.featured-img-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+}
+
+.featured-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(11, 15, 25, 0) 0%, rgba(11, 15, 25, 0.95) 80%);
+    padding: 1.5rem;
+}
+
+.featured-overlay h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    line-height: 1.35;
+}
+
+.featured-overlay p {
+    font-size: 0.88rem;
+    color: #cbd5e1;
+    line-height: 1.4;
+}
+
+/* Right Latest Sidebar List */
+.latest-sidebar {
+    background-color: #111827;
+    border-radius: 8px;
+    border: 1px solid #1f293d;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-head {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 2px solid #2d3748;
+    padding-bottom: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.star-icon {
+    color: #38bdf8; /* Blue star accent like reference image */
+    font-size: 1.2rem;
+}
+
+.sidebar-head h4 {
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.8px;
+}
+
+.sidebar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.sidebar-list li {
+    border-bottom: 1px dotted #2d3748;
+    padding-bottom: 0.75rem;
+}
+
+.sidebar-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.sidebar-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    line-height: 1.35;
+    display: block;
+    transition: color 0.2s ease;
+}
+
+.sidebar-list a:hover {
+    color: #ff6b35;
+}
+
+.post-date {
+    display: block;
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-top: 0.3rem;
+}
+
+/* Bottom Row: 3 Cards Grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.grid-card {
+    background-color: #111827;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #1f293d;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.grid-card:hover {
+    transform: translateY(-4px);
+    border-color: #ff6b35;
+}
+
+.grid-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body h4 {
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.35;
+    margin-bottom: 0.5rem;
+}
+
+.card-body p {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.card-meta {
+    font-size: 0.75rem;
+    color: #ff6b35;
+    font-weight: 600;
+    margin-top: auto;
+}
+
+/* Responsive Rules */
+@media (max-width: 900px) {
+    .featured-row {
+        grid-template-columns: 1fr;
+    }
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================================================
+   8. PAGINATION STYLES
+   ========================================================= */
+
+/* Grid with 4 columns for 8 cards */
+.cards-grid.grid-4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #1f293d;
+}
+
+.pagination a {
+    background-color: #111827;
+    color: #94a3b8;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #1f293d;
+    font-size: 0.88rem;
+    font-weight: 600;
+    transition: all 0.25 ease;
+}
+
+.pagination a:hover {
+    background-color: #1a2332;
+    color: #ffffff;
+    border-color: #ff6b35;
+}
+
+.pagination a.active {
+    background-color: #ff6b35;
+    color: #ffffff;
+    border-color: #ff6b35;
+}
+
+.pagination a.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Responsive Grid for Pagination Page */
+@media (max-width: 1100px) {
+    .cards-grid.grid-4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-grid.grid-4-cols {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================================================
+   9. READ MORE BUTTON STYLES
+   ========================================================= */
+.section-more {
+    display: flex;
+    justify-content: flex-end; /* قرارگیری در سمت راست */
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.read-more-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ff6b35;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.read-more-link:hover {
+    color: #ffffff;
+    transform: translateX(5px); /* حرکت جزیی فلش به سمت راست هنگام هوور */
+}
+/* =========================================================
+   10. HOME LATEST UPDATES (IMAGE LAYOUT MATCH)
+   ========================================================= */
+
+/* شبکه 3 ستونه برای کارت‌های پایین */
+.cards-grid.grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+/* استایل متای کامنت زیر کارت‌ها */
+.card-comment {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+/* آیتم‌های کوچک‌تر منوی جانبی راست */
+.sidebar-list li.small-item a {
+    font-size: 0.82rem;
+    color: #64748b;
+    font-weight: normal;
+}
+.sidebar-list li.small-item a:hover {
+    color: #ff6b35;
+}
+
+/* ریسپانسیو برای تبلت و موبایل */
+@media (max-width: 992px) {
+    .cards-grid.grid-3-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-grid.grid-3-cols {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================================================
+   11. CATEGORY NAVIGATION CARDS (HOME PAGE)
+   ========================================================= */
+.category-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.category-nav-card {
+    background-color: #111827;
+    border: 1px solid #1f293d;
+    border-radius: 8px;
+    padding: 1.75rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.category-nav-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff6b35;
+    box-shadow: 0 10px 25px rgba(255, 107, 53, 0.15);
+}
+
+.category-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ff6b35;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.category-nav-card h3 {
+    color: #ffffff;
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+    transition: color 0.25s ease;
+}
+
+.category-nav-card:hover h3 {
+    color: #ff6b35;
+}
+
+.category-nav-card p {
+    color: #94a3b8;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.category-card-btn {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.25s ease;
+}
+
+.category-nav-card:hover .category-card-btn {
+    color: #ff6b35;
+    transform: translateX(5px);
+}
+
+/* ریسپانسیو برای موبایل */
+@media (max-width: 900px) {
+    .category-nav-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================================================
+   12. SOCIAL MEDIA & CONTACT BUTTONS SECTION
+   ========================================================= */
+.social-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-btn {
+    background-color: #111827;
+    border: 1px solid #1f293d;
+    border-radius: 8px;
+    padding: 1rem 0.75rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    color: #94a3b8;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.social-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: transform 0.3s ease;
+}
+
+.social-btn:hover {
+    color: #ffffff;
+    border-color: #ff6b35;
+    background-color: #1a2332;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(255, 107, 53, 0.12);
+}
+
+.social-btn:hover svg {
+    transform: scale(1.15);
+    fill: #ff6b35;
+}
+
+/* ریسپانسیو برای تبلت و موبایل */
+@media (max-width: 900px) {
+    .social-nav-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .social-nav-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* =========================================================
+   13. CONTACT PAGE STYLES
+   ========================================================= */
+.contact-card-block {
+    background-color: #111827;
+    border: 1px solid #1f293d;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.contact-intro h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.formal-notice {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: rgba(31, 41, 61, 0.4);
+    border-left: 3px solid #ff6b35;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #cbd5e1;
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+.form-group label .required {
+    color: #ff6b35;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background-color: #0b0f19;
+    border: 1px solid #1f293d;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    color: #f3f4f6;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #ff6b35;
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-select option {
+    background-color: #111827;
+    color: #ffffff;
+}
+
+/* Submit Button */
+.form-submit-wrapper {
+    margin-top: 0.5rem;
+}
+
+.submit-btn {
+    background-color: #ff6b35;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem 2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e05523;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 107, 53, 0.3);
+}
+
+.submit-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover svg {
+    transform: translateX(3px) translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-card-block {
+        padding: 1.5rem;
+    }
+}
+/* =========================================================
+   14. LEGAL & TERMS PAGE STYLES
+   ========================================================= */
+.legal-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.legal-card {
+    background-color: #111827;
+    border: 1px solid #1f293d;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.legal-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid #1f293d;
+    padding-bottom: 0.8rem;
+}
+
+.legal-icon {
+    font-size: 1.3rem;
+}
+
+.legal-header h2 {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.legal-body {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.legal-body p {
+    margin-bottom: 1rem;
+}
+
+.legal-body ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.legal-body li {
+    margin-bottom: 0.5rem;
+}
+
+.legal-body strong {
+    color: #e2e8f0;
+}
+
+/* Warning Box for Engineering Disclaimer */
+.legal-warning-box {
+    background-color: rgba(255, 107, 53, 0.08);
+    border-left: 4px solid #ff6b35;
+    padding: 1.2rem;
+    border-radius: 0 8px 8px 0;
+    margin-top: 1rem;
+}
+
+.legal-warning-box strong {
+    color: #ff6b35;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.legal-warning-box p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+.legal-footer-note {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+/* =========================================================
+   15. SITE FOOTER STYLES
+   ========================================================= */
+.site-footer {
+    background-color: #0b0f19;
+    border-top: 1px solid #1f293d;
+    padding-top: 3.5rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+}
+
+.footer-col h4 {
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+/* Orange Accent Line Under Header */
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #ff6b35;
+    border-radius: 2px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: all 0.25 ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #ff6b35;
+    transform: translateX(4px);
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+    background-color: #070a12;
+    border-top: 1px solid #1a2333;
+    padding: 1.25rem 1.5rem;
+    text-align: center;
+}
+
+.footer-bottom-content p {
+    color: #64748b;
+    font-size: 0.82rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Responsive Footer */
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
