@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulations Archive | Alireza Derakhshan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top White Banner -->
+    <div class="top-banner">
+        Aeronautics & Astronautics
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="first-name">Alireza</span>
+                    <span class="last-name">Derakhshan</span>
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="portfolio.html" class="dropbtn active">Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="simulations.html" class="active">Simulations</a></li>
+                            <li><a href="programming.html">Programming</a></li>
+                            <li><a href="technical-science.html">Technical Science</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Search Bar -->
+        <form class="search-box" action="portfolio.html" method="GET">
+            <select name="category" class="search-select">
+                <option value="simulations" selected>Simulations</option>
+                <option value="all">All</option>
+                <option value="programming">Programming</option>
+                <option value="technical-science">Technical Science</option>
+            </select>
+            <input type="text" name="q" placeholder="Search simulations..." class="search-input" required>
+            <button type="submit" class="search-button" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </form>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="portfolio-wrapper">
+
+        <!-- Category Title Header -->
+        <section class="category-block">
+            <div class="category-header">
+                <h2>Numerical & CFD Simulations</h2>
+                <div class="category-line"></div>
+            </div>
+
+            <!-- Top Row: 1 Featured + 3 Sidebar Items (Total 4 Items) -->
+            <div class="featured-row">
+                <!-- Item 1 (Featured) -->
+                <article class="featured-card">
+                    <div class="featured-img-box">
+                        <img src="assets/images/sim-main.jpg" alt="3D CFD Analysis" onerror="this.src='https://via.placeholder.com/800x450/111827/ffffff?text=1.+Supersonic+Nozzle+CFD'">
+                        <div class="featured-overlay">
+                            <h3>3D CFD Analysis of Supersonic Convergent-Divergent Rocket Nozzles</h3>
+                            <p>Numerical simulation of shockwave physics, flow separation, and thrust optimization under varying back-pressure regimes.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Items 2, 3, 4 (Sidebar List) -->
+                <aside class="latest-sidebar">
+                    <div class="sidebar-head">
+                        <span class="star-icon">★</span>
+                        <h4>LATEST SIMULATIONS</h4>
+                    </div>
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">Transonic Flow Shockwave Interactions Over Aerofoil Sections</a>
+                            <span class="post-date">July 28, 2026</span>
+                        </li>
+                        <li>
+                            <a href="#">Transient Thermal Mapping of Regeneratively Cooled Combustors</a>
+                            <span class="post-date">July 20, 2026</span>
+                        </li>
+                        <li>
+                            <a href="#">Multiphase Injector Spray Atomization Numerical Modeling</a>
+                            <span class="post-date">July 12, 2026</span>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <!-- Bottom Row: 8 Grid Cards (Items 5 to 12) -->
+            <div class="cards-grid grid-4-cols">
+                <!-- Item 5 -->
+                <article class="grid-card">
+                    <img src="assets/images/sim-1.jpg" alt="Simulation" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=5.+Hypersonic+Entry'">
+                    <div class="card-body">
+                        <h4>Hypersonic Re-entry Capsule Aerothermodynamic Heating</h4>
+                        <p>Shock-layer thermal analysis using compressible Navier-Stokes solver.</p>
+                        <span class="card-meta">June 30, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 6 -->
+                <article class="grid-card">
+                    <img src="assets/images/sim-2.jpg" alt="Simulation" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=6.+Turbopump+FEA'">
+                    <div class="card-body">
+                        <h4>Turbopump Impeller FEA Structural Fatigue Analysis</h4>
+                        <p>Rotordynamic stress mapping under maximum operational RPM.</p>
+                        <span class="card-meta">June 21, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 7 -->
+                <article class="grid-card">
+                    <img src="assets/images/sim-3.jpg" alt="Simulation" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=7.+Combustion+Instability'">
+                    <div class="card-body">
+                        <h4>High-Pressure Combustion Acoustic Instability CFD</h4>
+                        <p>Vortex shedding interactions with chamber flame dynamics.</p>
+                        <span class="card-meta">June 15, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 8 -->
+                <article class="grid-card">
+                    <img src="assets/images/sim-4.jpg" alt="Simulation" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=8.+Liquid+Slosh'">
+                    <div class="card-body">
+                        <h4>Propellant Tank Liquid Sloshing Transient CFD</h4>
+                        <p>VOF multiphase model under microgravity thrust vectors.</p>
+                        <span class="card-meta">May 28, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 9 -->
+                <article class="grid-card">
+                    <img src="assets/images/sim-5.jpg" alt="Simulation" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=9.+Plasma+Thruster'">
+                    <div class="card-body">
+                        <h4>Hall-Effect Plasma Thruster Magnetic Field Simulation</h4>
+                        <p>Particle-in-Cell (PIC) modeling of ion acceleration plumes.</p>
+                        <span class="card-meta">May 19, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 10 -->
+                <article class="grid-card">
+                    <img src="assets/images/sim-6.jpg" alt="Simulation" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=10.+Ejector+Nozzle'">
+                    <div class="card-body">
+                        <h4>Supersonic Ejector Nozzle Secondary Flow Entrainment</h4>
+                        <p>Mass flow ratio evaluation using k-omega SST turbulence model.</p>
+                        <span class="card-meta">May 05, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 11 -->
+                <article class="grid-card">
+                    <img src="assets/images/sim-7.jpg" alt="Simulation" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=11.+Thermal+Shield'">
+                    <div class="card-body">
+                        <h4>Ablative Thermal Protection System Degradation</h4>
+                        <p>1D/3D coupled pyrolysis reaction and heat transfer model.</p>
+                        <span class="card-meta">April 22, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 12 -->
+                <article class="grid-card">
+                    <img src="assets/images/sim-8.jpg" alt="Simulation" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=12.+Boundary+Layer'">
+                    <div class="card-body">
+                        <h4>Hypersonic Boundary Layer Transition Numerical Mesh</h4>
+                        <p>Direct Numerical Simulation (DNS) of turbulent spot formation.</p>
+                        <span class="card-meta">April 10, 2026</span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination Bar (1, 2, 3, 4...) -->
+            <div class="pagination">
+                <a href="#" class="page-btn disabled">&laquo; Prev</a>
+                <a href="#" class="page-num active">1</a>
+                <a href="#" class="page-num">2</a>
+                <a href="#" class="page-num">3</a>
+                <a href="#" class="page-num">4</a>
+                <a href="#" class="page-btn">Next &raquo;</a>
+            </div>
+        </section>
+
+    </main>
+<!-- Main Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Column 1: Legal & Terms -->
+            <div class="footer-col">
+                <h4>Legal & Terms</h4>
+                <ul class="footer-links">
+                    <li><a href="legal.html">Terms & Legal Overview</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2: Contact Info -->
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Get In Touch (Form)</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Social Media -->
+            <div class="footer-col">
+                <h4>Social Media</h4>
+                <ul class="footer-links">
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://x.com" target="_blank" rel="noopener">X / Twitter</a></li>
+                    <li><a href="https://t.me/yourchannel" target="_blank" rel="noopener">Telegram Channel</a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Portfolio Sections -->
+            <div class="footer-col">
+                <h4>Portfolio Sections</h4>
+                <ul class="footer-links">
+                    <li><a href="simulations.html">Simulations (CFD & FEA)</a></li>
+                    <li><a href="programming.html">Programming & Codes</a></li>
+                    <li><a href="technical-science.html">Technical Science & Papers</a></li>
+                    <li><a href="portfolio.html">All Projects Overview</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2026 Alireza Derakhshan. All rights reserved. | Aerospace Engineering</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

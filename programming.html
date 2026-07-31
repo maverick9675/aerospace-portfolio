@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Archive | Alireza Derakhshan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top White Banner -->
+    <div class="top-banner">
+        Aeronautics & Astronautics
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="first-name">Alireza</span>
+                    <span class="last-name">Derakhshan</span>
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="portfolio.html" class="dropbtn active">Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="simulations.html">Simulations</a></li>
+                            <li><a href="programming.html" class="active">Programming</a></li>
+                            <li><a href="technical-science.html">Technical Science</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Search Bar -->
+        <form class="search-box" action="portfolio.html" method="GET">
+            <select name="category" class="search-select">
+                <option value="programming" selected>Programming</option>
+                <option value="all">All</option>
+                <option value="simulations">Simulations</option>
+                <option value="technical-science">Technical Science</option>
+            </select>
+            <input type="text" name="q" placeholder="Search code, scripts..." class="search-input" required>
+            <button type="submit" class="search-button" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </form>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="portfolio-wrapper">
+
+        <!-- Category Title Header -->
+        <section class="category-block">
+            <div class="category-header">
+                <h2>Programming & Algorithms</h2>
+                <div class="category-line"></div>
+            </div>
+
+            <!-- Top Row: 1 Featured + 3 Sidebar Items (Total 4 Items) -->
+            <div class="featured-row">
+                <!-- Item 1 (Featured) -->
+                <article class="featured-card">
+                    <div class="featured-img-box">
+                        <img src="assets/images/prog-main.jpg" alt="Propulsion Code" onerror="this.src='https://via.placeholder.com/800x450/111827/ffffff?text=1.+Python+Propulsion+Solver'">
+                        <div class="featured-overlay">
+                            <h3>Object-Oriented Rocket Engine Thermodynamic Cycle Calculator</h3>
+                            <p>Open-source Python suite for staged-combustion, expander, and gas-generator cycle equilibrium calculations.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Items 2, 3, 4 (Sidebar List) -->
+                <aside class="latest-sidebar">
+                    <div class="sidebar-head">
+                        <span class="star-icon">★</span>
+                        <h4>LATEST CODE & TOOLS</h4>
+                    </div>
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">3-DOF Orbital Insertion Trajectory & Mass Ratio Optimizer in C++</a>
+                            <span class="post-date">July 28, 2026</span>
+                        </li>
+                        <li>
+                            <a href="#">Real-time Telemetry Data Parser & Plotter Dashboard</a>
+                            <span class="post-date">July 15, 2026</span>
+                        </li>
+                        <li>
+                            <a href="#">Isentropic Compressible Flow Equations Solver Module</a>
+                            <span class="post-date">July 02, 2026</span>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <!-- Bottom Row: 8 Grid Cards (Items 5 to 12) -->
+            <div class="cards-grid grid-4-cols">
+                <!-- Item 5 -->
+                <article class="grid-card">
+                    <img src="assets/images/prog-1.jpg" alt="Code" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=5.+OpenFOAM+Plugin'">
+                    <div class="card-body">
+                        <h4>OpenFOAM Custom Boundary Condition C++ Plugin</h4>
+                        <p>Non-reflecting acoustic wave boundary for CFD solvers.</p>
+                        <span class="card-meta">June 25, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 6 -->
+                <article class="grid-card">
+                    <img src="assets/images/prog-2.jpg" alt="Code" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=6.+Grain+Optimization'">
+                    <div class="card-body">
+                        <h4>Hybrid Rocket Motor Grain Geometry Optimizer</h4>
+                        <p>Genetic algorithm tool for star-grain regression optimization.</p>
+                        <span class="card-meta">June 18, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 7 -->
+                <article class="grid-card">
+                    <img src="assets/images/prog-3.jpg" alt="Code" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=7.+Monte+Carlo+Orbit'">
+                    <div class="card-body">
+                        <h4>Monte Carlo Orbit Determination & Perturbation Simulator</h4>
+                        <p>High-precision J2 perturbation model implemented in Python.</p>
+                        <span class="card-meta">June 04, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 8 -->
+                <article class="grid-card">
+                    <img src="assets/images/prog-4.jpg" alt="Code" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=8.+CAN-bus+Parser'">
+                    <div class="card-body">
+                        <h4>CAN-bus Avionics Protocol Parser for Test Stands</h4>
+                        <p>Low-latency telemetry decoder written in Embedded C.</p>
+                        <span class="card-meta">May 22, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 9 -->
+                <article class="grid-card">
+                    <img src="assets/images/prog-5.jpg" alt="Code" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=9.+Julia+Thermal'">
+                    <div class="card-body">
+                        <h4>Finite Difference Heat Conduction Matrix Solver in Julia</h4>
+                        <p>2D implicit heat equation solver for rocket nozzle walls.</p>
+                        <span class="card-meta">May 11, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 10 -->
+                <article class="grid-card">
+                    <img src="assets/images/prog-6.jpg" alt="Code" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=10.+CEA+Wrapper'">
+                    <div class="card-body">
+                        <h4>Rocket Combustion Equilibrium CEA Python Wrapper</h4>
+                        <p>Automated interface for NASA CEA thermodynamic code.</p>
+                        <span class="card-meta">April 29, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 11 -->
+                <article class="grid-card">
+                    <img src="assets/images/prog-7.jpg" alt="Code" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=11.+Mesh+Script'">
+                    <div class="card-body">
+                        <h4>Automated Mesh Convergence Assessment Script</h4>
+                        <p>Bash and Python utility for grid independence studies.</p>
+                        <span class="card-meta">April 14, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 12 -->
+                <article class="grid-card">
+                    <img src="assets/images/prog-8.jpg" alt="Code" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=12.+RCS+Allocation'">
+                    <div class="card-body">
+                        <h4>Reaction Control System Thruster Allocation Algorithm</h4>
+                        <p>Simplex optimization method for spacecraft attitude control.</p>
+                        <span class="card-meta">April 01, 2026</span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination Bar -->
+            <div class="pagination">
+                <a href="#" class="page-btn disabled">&laquo; Prev</a>
+                <a href="#" class="page-num active">1</a>
+                <a href="#" class="page-num">2</a>
+                <a href="#" class="page-num">3</a>
+                <a href="#" class="page-num">4</a>
+                <a href="#" class="page-btn">Next &raquo;</a>
+            </div>
+        </section>
+
+    </main>
+<!-- Main Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Column 1: Legal & Terms -->
+            <div class="footer-col">
+                <h4>Legal & Terms</h4>
+                <ul class="footer-links">
+                    <li><a href="legal.html">Terms & Legal Overview</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2: Contact Info -->
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Get In Touch (Form)</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Social Media -->
+            <div class="footer-col">
+                <h4>Social Media</h4>
+                <ul class="footer-links">
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://x.com" target="_blank" rel="noopener">X / Twitter</a></li>
+                    <li><a href="https://t.me/yourchannel" target="_blank" rel="noopener">Telegram Channel</a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Portfolio Sections -->
+            <div class="footer-col">
+                <h4>Portfolio Sections</h4>
+                <ul class="footer-links">
+                    <li><a href="simulations.html">Simulations (CFD & FEA)</a></li>
+                    <li><a href="programming.html">Programming & Codes</a></li>
+                    <li><a href="technical-science.html">Technical Science & Papers</a></li>
+                    <li><a href="portfolio.html">All Projects Overview</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2026 Alireza Derakhshan. All rights reserved. | Aerospace Engineering</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

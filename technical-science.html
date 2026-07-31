@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Science Archive | Alireza Derakhshan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top White Banner -->
+    <div class="top-banner">
+        Aeronautics & Astronautics
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="first-name">Alireza</span>
+                    <span class="last-name">Derakhshan</span>
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="portfolio.html" class="dropbtn active">Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="simulations.html">Simulations</a></li>
+                            <li><a href="programming.html">Programming</a></li>
+                            <li><a href="technical-science.html" class="active">Technical Science</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Search Bar -->
+        <form class="search-box" action="portfolio.html" method="GET">
+            <select name="category" class="search-select">
+                <option value="technical-science" selected>Technical Science</option>
+                <option value="all">All</option>
+                <option value="simulations">Simulations</option>
+                <option value="programming">Programming</option>
+            </select>
+            <input type="text" name="q" placeholder="Search papers, literature..." class="search-input" required>
+            <button type="submit" class="search-button" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </form>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="portfolio-wrapper">
+
+        <!-- Category Title Header -->
+        <section class="category-block">
+            <div class="category-header">
+                <h2>Technical Science & Research</h2>
+                <div class="category-line"></div>
+            </div>
+
+            <!-- Top Row: 1 Featured + 3 Sidebar Items (Total 4 Items) -->
+            <div class="featured-row">
+                <!-- Item 1 (Featured) -->
+                <article class="featured-card">
+                    <div class="featured-img-box">
+                        <img src="assets/images/tech-main.jpg" alt="Research Literature" onerror="this.src='https://via.placeholder.com/800x450/111827/ffffff?text=1.+Hypersonic+Materials+Review'">
+                        <div class="featured-overlay">
+                            <h3>High-Temperature Ceramic Matrix Composites for Hypersonic Nozzles</h3>
+                            <p>A comprehensive academic review analyzing thermal shock degradation and oxidation barrier coatings in C/SiC materials.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Items 2, 3, 4 (Sidebar List) -->
+                <aside class="latest-sidebar">
+                    <div class="sidebar-head">
+                        <span class="star-icon">★</span>
+                        <h4>LATEST RESEARCH & PAPERS</h4>
+                    </div>
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">Green Propellant Performance Comparison for In-Space Thrusters</a>
+                            <span class="post-date">July 26, 2026</span>
+                        </li>
+                        <li>
+                            <a href="#">Acoustic Instabilities in High-Pressure Solid Rocket Motors</a>
+                            <span class="post-date">July 12, 2026</span>
+                        </li>
+                        <li>
+                            <a href="#">Additive Manufacturing of Copper Alloy Combustion Liners</a>
+                            <span class="post-date">June 28, 2026</span>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <!-- Bottom Row: 8 Grid Cards (Items 5 to 12) -->
+            <div class="cards-grid grid-4-cols">
+                <!-- Item 5 -->
+                <article class="grid-card">
+                    <img src="assets/images/tech-1.jpg" alt="Research" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=5.+RDE+Detonation'">
+                    <div class="card-body">
+                        <h4>Detonation Wave Propagation in Rotating Detonation Engines</h4>
+                        <p>Literature survey on pressure gain combustion thermo-physics.</p>
+                        <span class="card-meta">June 19, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 6 -->
+                <article class="grid-card">
+                    <img src="assets/images/tech-2.jpg" alt="Research" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=6.+Methane+vs+Kerosene'">
+                    <div class="card-body">
+                        <h4>Methane vs Kerosene Thrust Chamber Cooling Efficiency</h4>
+                        <p>Comparative thermodynamic evaluation for reusable launch vehicles.</p>
+                        <span class="card-meta">June 08, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 7 -->
+                <article class="grid-card">
+                    <img src="assets/images/tech-3.jpg" alt="Research" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=7.+Nozzle+Separation'">
+                    <div class="card-body">
+                        <h4>High-Altitude Rocket Nozzle Flow Separation Physics Review</h4>
+                        <p>Over-expansion shock structures in dual-bell nozzle designs.</p>
+                        <span class="card-meta">May 27, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 8 -->
+                <article class="grid-card">
+                    <img src="assets/images/tech-4.jpg" alt="Research" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=8.+Ion+Plumes'">
+                    <div class="card-body">
+                        <h4>Electric Propulsion Ion Plume Spacecraft Contamination</h4>
+                        <p>Surface degradation analysis from xenon thruster back-sputtering.</p>
+                        <span class="card-meta">May 15, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 9 -->
+                <article class="grid-card">
+                    <img src="assets/images/tech-5.jpg" alt="Research" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=9.+Cryo+Boil-Off'">
+                    <div class="card-body">
+                        <h4>Cryogenic Liquid Hydrogen Boil-Off Rate Reduction Methods</h4>
+                        <p>Multi-layer insulation (MLI) performance in long-duration missions.</p>
+                        <span class="card-meta">May 02, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 10 -->
+                <article class="grid-card">
+                    <img src="assets/images/tech-6.jpg" alt="Research" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=10.+Ramjet+Kinetics'">
+                    <div class="card-body">
+                        <h4>Supersonic Air-Breathing Ramjet Combustion Kinetics</h4>
+                        <p>Ignition delay times in high-enthalpy supersonic airflows.</p>
+                        <span class="card-meta">April 18, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 11 -->
+                <article class="grid-card">
+                    <img src="assets/images/tech-7.jpg" alt="Research" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=11.+Thermal+Coatings'">
+                    <div class="card-body">
+                        <h4>Advanced Thermal Barrier Coatings (TBC) for Injectors</h4>
+                        <p>Plasma-sprayed zirconia coatings under severe thermal cycling.</p>
+                        <span class="card-meta">April 05, 2026</span>
+                    </div>
+                </article>
+
+                <!-- Item 12 -->
+                <article class="grid-card">
+                    <img src="assets/images/tech-8.jpg" alt="Research" onerror="this.src='https://via.placeholder.com/400x250/1a2332/94a3b8?text=12.+Nuclear+Thermal'">
+                    <div class="card-body">
+                        <h4>Nuclear Thermal Propulsion (NTP) Fuel Element Review</h4>
+                        <p>Uranium carbide cermet fuel elements for deep space missions.</p>
+                        <span class="card-meta">March 23, 2026</span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination Bar -->
+            <div class="pagination">
+                <a href="#" class="page-btn disabled">&laquo; Prev</a>
+                <a href="#" class="page-num active">1</a>
+                <a href="#" class="page-num">2</a>
+                <a href="#" class="page-num">3</a>
+                <a href="#" class="page-num">4</a>
+                <a href="#" class="page-btn">Next &raquo;</a>
+            </div>
+        </section>
+
+    </main>
+<!-- Main Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Column 1: Legal & Terms -->
+            <div class="footer-col">
+                <h4>Legal & Terms</h4>
+                <ul class="footer-links">
+                    <li><a href="legal.html">Terms & Legal Overview</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2: Contact Info -->
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Get In Touch (Form)</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Social Media -->
+            <div class="footer-col">
+                <h4>Social Media</h4>
+                <ul class="footer-links">
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://x.com" target="_blank" rel="noopener">X / Twitter</a></li>
+                    <li><a href="https://t.me/yourchannel" target="_blank" rel="noopener">Telegram Channel</a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Portfolio Sections -->
+            <div class="footer-col">
+                <h4>Portfolio Sections</h4>
+                <ul class="footer-links">
+                    <li><a href="simulations.html">Simulations (CFD & FEA)</a></li>
+                    <li><a href="programming.html">Programming & Codes</a></li>
+                    <li><a href="technical-science.html">Technical Science & Papers</a></li>
+                    <li><a href="portfolio.html">All Projects Overview</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2026 Alireza Derakhshan. All rights reserved. | Aerospace Engineering</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
